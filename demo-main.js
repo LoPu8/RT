@@ -5,13 +5,6 @@
     /* define the site that hosts stimuli images */
     var repo_site = "https://LoPu8.github.io/RT/";
 
-    /* preload images */
-    var preload = {
-      type: 'preload',
-      images: ['img/blue.png', 'img/orange.png']
-    }
-    timeline.push(preload);
-
     /* define welcome message trial */
     var welcome = {
       type: "html-keyboard-response",
