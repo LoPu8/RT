@@ -54,12 +54,6 @@ var test_stimuli = [{
         "press the letter F on the keyboard as fast as you can.</p>" +
         "<p>If the circle is <strong>orange</strong>, press the letter J " +
         "as fast as you can.</p>" +
-        "<div style='width: 700px;'>" +
-        "<div style='float: left;'><img src='" + repo_site + "img/blue.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
-        "<p class='small'><strong>Press the F key</strong></p></div>" +
-        "<div class='float: right;'><img src='" + repo_site + "img/orange.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
-        "<p class='small'><strong>Press the J key</strong></p></div>" +
-        "</div>" +
         "<p>Please press enter</p>",
         data: {
             test_part: 'test',
