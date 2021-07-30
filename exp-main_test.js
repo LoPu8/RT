@@ -93,7 +93,7 @@ var feedback = {
 var test_procedure = {
     timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
-    repetitions: 5,
+    repetitions: 2,
     randomize_order: true
 }
 timeline.push(test_procedure);
