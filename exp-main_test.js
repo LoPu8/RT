@@ -67,21 +67,31 @@ var test = {
     type: "image-keyboard-response",
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
-    correct_text: '<div class = centerbox><div style="color:green"; class = center-text>Correct!</div></div>',
-	incorrect_text: '<div class = centerbox><div style="color:red"; class = center-text>Incorrect</div></div>',
-	timeout_message: '<div class = centerbox><div class = flanker-text>Respond faster</div></div>',
-	timing_feedback_duration: 1000,
-	show_stim_with_feedback: false,
-	timing_response: 1500,
-	timing_post_trial: 500,
     data: jsPsych.timelineVariable('data'),
     on_finish: function (data) {
         data.correct = data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
     },
 }
 
+var feedback = {
+    type: 'html-keyboard-response',
+    stimulus: function(){
+      // The feedback stimulus is a dynamic parameter because we can't know in advance whether
+      // the stimulus should be 'correct' or 'incorrect'.
+      // Instead, this function will check the accuracy of the last response and use that information to set
+      // the stimulus value on each trial.
+      var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+      if(last_trial_correct){
+        return "<p>Correct!</p>"; // the parameter value has to be returned from the function
+      } else {
+        return "<p>Wrong.</p>"; // the parameter value has to be returned from the function
+      }
+    }
+  }
+
+
 var test_procedure = {
-    timeline: [fixation, test],
+    timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
     repetitions: 5,
     randomize_order: true
