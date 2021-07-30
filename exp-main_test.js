@@ -86,7 +86,8 @@ var feedback = {
       } else {
         return "<p>Wrong.</p>"; // the parameter value has to be returned from the function
       }
-    }
+    },
+    trial_duration: 1000
   }
 
 
