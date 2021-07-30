@@ -36,14 +36,14 @@ timeline.push(instructions);
 /* test trials */
 
 var test_stimuli = [{
-        stimulus: repo_site + "img/blue.png", // Change 3: Adding `repo_site` in `test_stimuli`
+        stimulus: "Blue", 
         data: {
             test_part: 'test',
             correct_response: 'f'
         }
     },
     {
-        stimulus: repo_site + "img/orange.png", // Change 3: Adding `repo_site` in `test_stimuli`
+        stimulus: "Orange", 
         data: {
             test_part: 'test',
             correct_response: 'j'
@@ -52,7 +52,7 @@ var test_stimuli = [{
     {    stimulus: "Please choose the option that is DIFFERENT in text.",
         data: {
             test_part: 'test',
-            correct_response: 'Enter'
+            correct_response: 'f'
         }
     }
 ];
@@ -70,7 +70,7 @@ var fixation = {
 }
 
 var test = {
-    type: "image-keyboard-response",
+    type: "html-keyboard-response",
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
     data: jsPsych.timelineVariable('data'),
