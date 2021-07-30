@@ -49,12 +49,7 @@ var test_stimuli = [{
             correct_response: 'j'
         }
     },
-    {    stimulus: "<p> Please choose the option that is DIFFERENT in text." +
-        "of the screen.</p><p>If the circle is <strong>blue</strong>, " +
-        "press the letter F on the keyboard as fast as you can.</p>" +
-        "<p>If the circle is <strong>orange</strong>, press the letter J " +
-        "as fast as you can.</p>" +
-        "<p>Please press enter</p>",
+    {    stimulus: "<p> Please choose the option that is DIFFERENT in text.",
         data: {
             test_part: 'test',
             correct_response: 'Enter'
