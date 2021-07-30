@@ -48,6 +48,23 @@ var test_stimuli = [{
             test_part: 'test',
             correct_response: 'j'
         }
+    },
+    {    stimulus: "<p> Please choose the option that is DIFFERENT in text." +
+        "of the screen.</p><p>If the circle is <strong>blue</strong>, " +
+        "press the letter F on the keyboard as fast as you can.</p>" +
+        "<p>If the circle is <strong>orange</strong>, press the letter J " +
+        "as fast as you can.</p>" +
+        "<div style='width: 700px;'>" +
+        "<div style='float: left;'><img src='" + repo_site + "img/blue.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
+        "<p class='small'><strong>Press the F key</strong></p></div>" +
+        "<div class='float: right;'><img src='" + repo_site + "img/orange.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
+        "<p class='small'><strong>Press the J key</strong></p></div>" +
+        "</div>" +
+        "<p>Please press enter</p>",
+        data: {
+            test_part: 'test',
+            correct_response: 'Enter'
+        }
     }
 ];
 
@@ -68,7 +85,7 @@ var test = {
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
     data: jsPsych.timelineVariable('data'),
-    trial_duration: 1000,
+    trial_duration: 2500,
     on_finish: function (data) {
         data.correct = data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
     },
