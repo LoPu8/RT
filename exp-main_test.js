@@ -49,7 +49,7 @@ var test_stimuli = [{
             correct_response: 'j'
         }
     },
-    {    stimulus: "<p> Please choose the option that is DIFFERENT in text.",
+    {    stimulus: "Please choose the option that is DIFFERENT in text.",
         data: {
             test_part: 'test',
             correct_response: 'Enter'
