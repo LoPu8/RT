@@ -23,6 +23,7 @@
     .big {
       font-size: 80px;
       margin-top: 0px;
+      margin-bottom: 50px;
     }
     
     .small{
@@ -59,25 +60,27 @@
 
   var test_stimuli = [
     { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div class = 'sev>*'>" +
-      "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+      "<div >" +
+         "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+         "<div style=';' class='sev'>" +
+            "<div style='color: red; '>" +
+            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+            "<div class='float: right;'>" +
+            "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+        "</div>" +
+        "<div> <p></p> </div>" +
       "<div style=';' class='sev'>" +
-      "<div style='color: red; '>" +
-      "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
+            "<div>" +
+            "<p class='little'>  Press f  </p>  </div>" +
+            "<div class='float: right;'>" +
+            "<p class='little'> Press j </p></div>" +
       "</div>",
     data: {
       test_part: 'test',
       correct_response: 'j'
     }
-  }]
+  },
+  ];
 
   var test_stimuli2 = [
   { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +

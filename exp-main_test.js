@@ -38,169 +38,23 @@ timeline.push(instructions);
 var test_stimuli = [
     { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+         "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+         "<div style=';' class='sev'>" +
+            "<div style='color: red; '>" +
+            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+            "<div class='float: right;'>" +
+            "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+        "</div>" +
+        "<div> <p></p> </div>" +
       "<div style=';' class='sev'>" +
-      "<div style='color: red; '>" +
-      "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
+            "<div>" +
+            "<p class='little'>  Press f  </p>  </div>" +
+            "<div class='float: right;'>" +
+            "<p class='little'> Press j </p></div>" +
       "</div>",
     data: {
       test_part: 'test',
       correct_response: 'j'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: red; '><strong>Blue</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: blue; '>" +
-      "<p class='small'>  <strong>Red</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small' style = 'color:blue'><strong>Blue</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little' >  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'j'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: blue; '><strong>Orange</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: orange; '>" +
-      "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:green'><strong>Orange</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'j'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: orange; '><strong>Green</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: green; '>" +
-      "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'j'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: purple; '><strong>Brown</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: orange; '>" +
-      "<p class='small'>  <strong>Brown</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:orange'><strong>Blue</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: brown; '><strong>Pink</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: black; '>" +
-      "<p class='small'>  <strong>Pink</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:pink'><strong>Brown</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: green; '><strong>Purple</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: purple; '>" +
-      "<p class='small'>  <strong>Purple</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: pink; '><strong>Black</strong></p>" +
-      "<div style=';' class='sev'>" +
-      "<div style='color: blue; '>" +
-      "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
-      "</div>" +
-      "<div style=';' class='sev'>" +
-      "<div>" +
-      "<p class='little'>  Press f  </p>  </div>" +
-      "<div class='float: right;'>" +
-      "<p class='little'> Press j </p></div>" +
-      "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
     }
   },
   ];
