@@ -34,7 +34,7 @@ var instructions1 = {
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
        "</div>" +
-     "<p style = 'margin-top: 100px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
+     "<p style = 'margin-top: 10px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
         "<p>Press F to begin.</p>",
     post_trial_gap: 500
 };
