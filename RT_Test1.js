@@ -262,7 +262,7 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; style= 'font-size: 2em'; class = center-text; class='big' >Correct!</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Correct!</p></div></div>"; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text; class='big' >Incorrect</div></div>"; // the parameter value has to be returned from the function
       }
