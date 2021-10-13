@@ -10,25 +10,39 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "Welcome to the experiment. Press any key to begin."
+    stimulus: "<p> You will now first do an experiment, in which you have to choose specific words. </p>" +
+        "<p> After that, you will take part in an unrelated survey, in which we ask you about your perception of political events. </p> " +
+        "<p> </p>" +
+        "<p> </p>" +
+        "Press any key to begin."        
 };
 timeline.push(welcome_block);
 
 /* define instructions trial */
 var instructions = {
     type: "html-keyboard-response",
-    stimulus: "<p>In this experiment, a circle will appear in the center " +
-        "of the screen.</p><p>If the circle is <strong>blue</strong>, " +
-        "press the letter F on the keyboard as fast as you can.</p>" +
-        "<p>If the circle is <strong>orange</strong>, press the letter J " +
-        "as fast as you can.</p>" +
-        "<div style='width: 700px;'>" +
-        "<div style='float: left;'><img src='" + repo_site + "img/blue.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
-        "<p class='small'><strong>Press the F key</strong></p></div>" +
-        "<div class='float: right;'><img src='" + repo_site + "img/orange.png'></img>" + // Change 2: Adding `repo_site` in `instructions`
-        "<p class='small'><strong>Press the J key</strong></p></div>" +
-        "</div>" +
-        "<p>Press any key to begin.</p>",
+    stimulus: "<p>In this experiment, you will see three words. " +
+        "One big word in the middle, and two smaller ones on the left on the right.</p><p>" +
+        "Your task is, to identify the word which is <strong>different</strong> to the one in the middle" + 
+        "<p> If the <strong>left</strong> word is different to the one presented in the middle, press the letter F on the keyboard.</p>" +
+        "<p> If the <strong>right</strong> word is different to the one presented in the middle, press the letter J.</p>" +
+        "<div >" +
+        "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+        "<div style=';' class='sev'>" +
+           "<div style='color: red; '>" +
+           "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+           "<div class='float: right;'>" +
+           "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+       "</div>" +
+       "<div> <p></p> </div>" +
+     "<div style=';' class='sev'>" +
+           "<div>" +
+           "<p class='little'>  Press f  </p>  </div>" +
+           "<div class='float: right;'>" +
+           "<p class='little'> Press j </p></div>" +
+     "</div>"+
+     "<p> In this case, the right word is different to the one in the middle. Thus, you should press J on the keyboard. </p>" +
+        "<p>Press J to begin.</p>",
     post_trial_gap: 2000
 };
 timeline.push(instructions);
