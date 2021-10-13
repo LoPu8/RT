@@ -10,7 +10,7 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You will now first do an experiment, in which you have to choose specific words. </p>" +
+    stimulus: "<p> You will first engage with a task, in which you have to choose specific words. </p>" +
         "<p> After that, you will take part in an unrelated survey, in which we ask you about your perception of political events. </p> " +
         "<p> </p>" +
         "<p> </p>" +
