@@ -34,12 +34,14 @@ var instructions1 = {
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
           "</div>" +
-          "</div>" +   
-     "<p style = 'margin-top: 10px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
-        "<p>Press F to begin.</p>",
+     "<p style = 'margin-top': 10px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
+        "<p>Press F to begin.</p>" +
+        "</div>" 
+        ,
     post_trial_gap: 500
 };
 timeline.push(instructions1);
+
 
 var instructions2 = {
     type: "html-keyboard-response",
@@ -264,7 +266,7 @@ var feedback = {
       if(last_trial_correct){
         return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Correct!</p></div></div>"; // the parameter value has to be returned from the function
       } else {
-        return "<div class = centerbox><div style='color:red'; class = center-text; class='big' >Incorrect</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Incorrect!</p></div></div>"; // the parameter value has to be returned from the function
       }
     },
     trial_duration: 2500
