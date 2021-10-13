@@ -10,11 +10,11 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You will first engage with a task, in which you have to choose specific words. </p>" +
-        "<p> After that, you will take part in an unrelated survey, in which we ask you about your perception of political events. </p> " +
+    stimulus: "<p> Unfortunately, you did not reach 80% of correct answered trials. </p>" +
+        "<p> Thus, you will have to repeat the test phase. You will again see the instructions on the next page.</p> " +
+        "<p> Please try to pay attention to the instructions.</p>" +
         "<p> </p>" +
-        "<p> </p>" +
-        "<p style = 'margin-top: 100px'> Press any key to begin. </p> "        
+        "<p style = 'margin-top: 100px'> Press any key  </p> "        
 };
 timeline.push(welcome_block);
 
@@ -27,23 +27,26 @@ var instructions1 = {
         "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
         "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p> <p> </p> " +
         "<div >" +
-        "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
-        "<div style=';' class='sev'>" +
+          "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
+          "<div style=';' class='sev'>" +
            "<div style='color: red; '>" +
            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
-       "</div> </div> " +
-     "<p style = 'margin-top: 10px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
-        "<p>Press F to begin.</p>",
+          "</div>" +
+     "<p style = 'margin-top: 50px'> In this example, the left word is different to the big one in the middle. Thus, <strong>you should press F on the keyboard.</strong> </p>" +
+        "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
+        "</div>" 
+        ,
     post_trial_gap: 500
 };
 timeline.push(instructions1);
 
+
 var instructions2 = {
     type: "html-keyboard-response",
-    stimulus: "<p>You will first have 16 practice trials. After each trial, you will get feedback, whether the answer was correct or not. " +
-        "<strong> You have to answer at least 80% correct in order to continue to the next part of the experiment </strong>, so it is more important to be correct than to answer fast.</p>" +
+    stimulus: "<p>You will again have 16 practice trials. After each trial, you will get feedback, whether the answer was correct or not. " +
+        "<strong> You again have to answer at least 80% correct in order to continue to the next part of the experiment </strong>, so it is more important to be correct than to answer fast.</p>" +
         "<p> </p>" + 
         "<p style = 'margin-top: 100px'> When you are ready, press any key to begin.</p>",
     post_trial_gap: 2000
@@ -261,9 +264,9 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text; class='big' >Correct!</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Correct!</p></div></div>"; // the parameter value has to be returned from the function
       } else {
-        return "<div class = centerbox><div style='color:red'; class = center-text; class='big' >Incorrect</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Incorrect!</p></div></div>"; // the parameter value has to be returned from the function
       }
     },
     trial_duration: 2500
@@ -290,10 +293,10 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy1 = Math.round(correct_trials.count() / trials.count() * 100);
-        var rt = Math.round(correct_trials.select('rt').mean());
+        var accuracy_Test2 = Math.round(correct_trials.count() / trials.count() * 100);
+        var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy1 + "% of the trials.</p>" +
+        return "<p>You responded correctly on " + accuracy_Test2 + "% of the trials.</p>" +
             "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
