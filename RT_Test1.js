@@ -27,13 +27,14 @@ var instructions1 = {
         "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
         "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p> <p> </p> " +
         "<div >" +
-        "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
-        "<div style=';' class='sev'>" +
+          "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
+          "<div style=';' class='sev'>" +
            "<div style='color: red; '>" +
            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
-       "</div>" "</div> " +
+          "</div>" +
+        "</div> " +
      "<p style = 'margin-top: 10px> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
         "<p>Press F to begin.</p>",
     post_trial_gap: 500
