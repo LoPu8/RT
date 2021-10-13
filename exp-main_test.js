@@ -246,7 +246,7 @@ var test = {
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
     data: jsPsych.timelineVariable('data'),
-    trial_duration: 5000,
+    trial_duration: 8000,
     on_finish: function (data) {
         data.correct = data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
     },
@@ -261,9 +261,9 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text; class=div>Correct!</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text; class='big' >Correct!</div></div>"; // the parameter value has to be returned from the function
       } else {
-        return "<div class = centerbox><div style='color:red'; class = center-text>Incorrect</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:red'; class = center-text; class='big' >Incorrect</div></div>"; // the parameter value has to be returned from the function
       }
     },
     trial_duration: 2500
