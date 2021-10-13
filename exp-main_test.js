@@ -273,7 +273,7 @@ var feedback = {
 var test_procedure = {
     timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
-    repetitions: 2,
+    repetitions: 1,
     randomize_order: true
 }
 timeline.push(test_procedure);
@@ -290,12 +290,11 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+        var accuracy1 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy + "% of the trials.</p>" +
-            "<p>Your average response time was " + rt + "ms.</p>" +
-            "<p>Press any key to complete the experiment. Thank you!</p>";
+        return "<p>You responded correctly on " + accuracy1 + "% of the trials.</p>" +
+            "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
 };
