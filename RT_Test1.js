@@ -290,10 +290,10 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy1 = Math.round(correct_trials.count() / trials.count() * 100);
+        var accuracy_Test1 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy1 + "% of the trials.</p>" +
+        return "<p>You responded correctly on " + accuracy_Test1 + "% of the trials.</p>" +
             "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
