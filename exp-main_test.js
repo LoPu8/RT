@@ -14,7 +14,7 @@ var welcome_block = {
         "<p> After that, you will take part in an unrelated survey, in which we ask you about your perception of political events. </p> " +
         "<p> </p>" +
         "<p> </p>" +
-        "Press any key to begin."        
+        "<p style = 'margin-top: 100px'> Press any key to begin. </p> "        
 };
 timeline.push(welcome_block);
 
