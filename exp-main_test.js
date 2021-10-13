@@ -19,37 +19,39 @@ var welcome_block = {
 timeline.push(welcome_block);
 
 /* define instructions trial */
-var instructions = {
+var instructions1 = {
     type: "html-keyboard-response",
     stimulus: "<p>In this experiment, you will see three words. " +
-        "One big word in the middle, and two smaller ones on the left on the right.</p><p>" +
-        "Your task is, to identify the word which is <strong>different</strong> to the one in the middle" + 
-        "<p> If the <strong>left</strong> word is different to the one presented in the middle, press the letter F on the keyboard.</p>" +
-        "<p> If the <strong>right</strong> word is different to the one presented in the middle, press the letter J.</p>" +
+        "One big word in the middle, and two smaller ones to the left and right.</p>" +
+        "<p> Your task is, to identify the word which is <strong>different</strong> to the one in the middle </p>"+ 
+        "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
+        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p> <p> </p> " +
         "<div >" +
-        "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+        "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
         "<div style=';' class='sev'>" +
            "<div style='color: red; '>" +
            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
            "<div class='float: right;'>" +
-           "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+           "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
        "</div>" +
-       "<div> <p></p> </div>" +
-     "<div style=';' class='sev'>" +
-           "<div>" +
-           "<p class='little'>  Press f  </p>  </div>" +
-           "<div class='float: right;'>" +
-           "<p class='little'> Press j </p></div>" +
-     "</div>"+
-     "<p> In this case, the right word is different to the one in the middle. Thus, you should press J on the keyboard. </p>" +
-        "<p>Press J to begin.</p>",
+     "<p> In this example, the left word is different to the one in the middle. Thus, you should press F on the keyboard. </p>" +
+        "<p>Press F to begin.</p>",
+    post_trial_gap: 500
+};
+timeline.push(instructions1);
+
+var instructions2 = {
+    type: "html-keyboard-response",
+    stimulus: "<p>You will first have 20 practice trials. After each trial, you will get feedback, whether the answer was correct or not. " +
+        "<strong> You have to answer at least 80% correct in order to continue to the next part of the experiment </strong>, so it is more important to be correct than to answer very fast.</p>" +
+        "<p> </p>" + 
+        "<p style = 'margin-top: 100px'> When you are ready, press any key to begin.</p>",
     post_trial_gap: 2000
 };
-timeline.push(instructions);
+timeline.push(instructions2);
 
-/* test trials */
 
-var test_stimuli = [
+  var test_stimuli = [
     { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
          "<p class='big', style='color: black; '><strong>Red</strong></p>" +
@@ -65,6 +67,153 @@ var test_stimuli = [
             "<p class='little'>  Press f  </p>  </div>" +
             "<div class='float: right;'>" +
             "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+  
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: red; '><strong>Blue</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: blue; '>" +
+      "<p class='small'>  <strong>Red</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small' style = 'color:blue'><strong>Blue</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little' >  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: blue; '><strong>Orange</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: orange; '>" +
+      "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:green'><strong>Orange</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: orange; '><strong>Green</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: green; '>" +
+      "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: purple; '><strong>Brown</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: orange; '>" +
+      "<p class='small'>  <strong>Brown</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:orange'><strong>Blue</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'j'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: brown; '><strong>Pink</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: black; '>" +
+      "<p class='small'>  <strong>Pink</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:pink'><strong>Brown</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'j'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: green; '><strong>Purple</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: purple; '>" +
+      "<p class='small'>  <strong>Purple</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
+      "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'j'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: pink; '><strong>Black</strong></p>" +
+      "<div style=';' class='sev'>" +
+      "<div style='color: blue; '>" +
+      "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+      "</div>" +
+      "<div style=';' class='sev'>" +
+      "<div>" +
+      "<p class='little'>  Press f  </p>  </div>" +
+      "<div class='float: right;'>" +
+      "<p class='little'> Press j </p></div>" +
       "</div>",
     data: {
       test_part: 'test',
@@ -90,7 +239,7 @@ var test = {
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
     data: jsPsych.timelineVariable('data'),
-    trial_duration: 2500,
+    trial_duration: 5000,
     on_finish: function (data) {
         data.correct = data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
     },
@@ -105,12 +254,12 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text>Correct!</div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text; class=div>Correct!</div></div>"; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text>Incorrect</div></div>"; // the parameter value has to be returned from the function
       }
     },
-    trial_duration: 1500
+    trial_duration: 2500
   }
 
 
