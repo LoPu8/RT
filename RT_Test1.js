@@ -23,9 +23,9 @@ var instructions1 = {
     type: "html-keyboard-response",
     stimulus: "<p>In this experiment, you will see three words. " +
         "One big word in the middle, and two smaller ones to the left and right.</p>" +
-        "<p> Your task always is, to identify the word which is <strong>different</strong> to the one in the middle. </p>"+ 
-        "<p> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
-        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p>" +
+        "<p> Your task always is, to identify the word (i.e. text) which is <strong>different</strong> to the one in the middle. </p>"+ 
+        "<p> If the <strong>left</strong> word (i.e. text) is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
+        "If the <strong>right</strong> word (i.e. text) is different to the one presented in the middle, press the letter  <strong>J</strong>.</p>" +
         " <p style = 'margin-bottom: 50px'><strong> The task will be the same for all trials </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +

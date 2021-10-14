@@ -30,6 +30,7 @@ timeline.push(welcome_block);
             "<p class='small', style = 'color:blue'><strong>Tomato</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
+        "<br>" +
       "<div style=';' class='sev'>" +
             "<div>" +
             "<p class='little'>  Press f  </p>  </div>" +
@@ -52,6 +53,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:brown'><strong>Monkey</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -74,6 +76,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:orange'><strong>Bridge</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -96,6 +99,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:green'><strong>Hand</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -118,6 +122,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:red'><strong>Pear</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -140,6 +145,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Bat</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -162,6 +168,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:purple'><strong>House</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -184,6 +191,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:pink'><strong>Mole</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +

@@ -11,7 +11,7 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> You succesfully finished the third experiment trial. </p>" +
-        "<p> You will now start the last trial of the experiment.  </p> " +
+        "<p> You will now start the last block of the experiment.  </p> " +
         "<p> The task will again be the same as in the first and second trial: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
         "<p> Please again try to answer at least 80% correct. </p>" +
         "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
@@ -30,6 +30,7 @@ timeline.push(welcome_block);
             "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
+        "<br>" +
       "<div style=';' class='sev'>" +
             "<div>" +
             "<p class='little'>  Press f  </p>  </div>" +
@@ -52,6 +53,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Table</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -74,6 +76,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Rain</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -96,6 +99,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Triangle</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -118,6 +122,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Circle</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -140,6 +145,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Spaghetti</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -162,6 +168,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
@@ -184,6 +191,7 @@ timeline.push(welcome_block);
          "<p class='small', style = 'color:black'><strong>Car</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
+     "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
          "<p class='little'>  Press f  </p>  </div>" +
