@@ -211,7 +211,7 @@ var fixation = {
     stimulus: '<div style="font-size:60px;">+</div>',
     choices: jsPsych.NO_KEYS,
     trial_duration: function () {
-        return jsPsych.randomization.sampleWithoutReplacement([750, 1000, 1250, 1500, 1750, 2000], 1)[0];
+        return jsPsych.randomization.sampleWithoutReplacement([750, 1000, 1250, 1500], 1)[0];
     },
     data: {
         test_part: 'fixation'
@@ -243,14 +243,14 @@ var feedback = {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Incorrect!</p></div></div>"; // the parameter value has to be returned from the function
       }
     },
-    trial_duration: 2500
+    trial_duration: 1500
   }
 
 
 var test_procedure = {
     timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
-    repetitions: 2,
+    repetitions: 1,
     randomize_order: true
 }
 timeline.push(test_procedure);
