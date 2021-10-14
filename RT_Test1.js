@@ -11,7 +11,7 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> You will first engage with a task, in which you have to choose specific words. </p>" +
-        "<p> After that, you will take part in an unrelated survey, in which we ask you about your perception of political events. </p> " +
+        "<p> After that, you will take part in a  survey, in which we ask you about your perception of political events. </p> " +
         "<p> </p>" +
         "<p> </p>" +
         "<p style = 'margin-top: 100px'> Press any key to begin. </p> "        
@@ -23,9 +23,10 @@ var instructions1 = {
     type: "html-keyboard-response",
     stimulus: "<p>In this experiment, you will see three words. " +
         "One big word in the middle, and two smaller ones to the left and right.</p>" +
-        "<p> Your task is, to identify the word which is <strong>different</strong> to the one in the middle </p>"+ 
+        "<p> Your task always is, to identify the word which is <strong>different</strong> to the one in the middle </p>"+ 
         "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
-        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p> <p> </p> " +
+        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p>" +
+        " <p> <strong> The task will be the same for all trials </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
           "<div style=';' class='sev'>" +
@@ -64,7 +65,7 @@ timeline.push(instructions2);
             "<div class='float: right;'>" +
             "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
         "</div>" +
-        "<div> <p></p> </div>" +
+        "<div> </div>" +
         "<br>" +
       "<div style=';' class='sev'>" +
             "<div>" +
@@ -87,7 +88,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:blue'><strong>Blue</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -110,7 +111,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:green'><strong>Orange</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -133,7 +134,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -156,7 +157,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:orange'><strong>Blue</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -179,7 +180,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:pink'><strong>Brown</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -202,7 +203,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -225,7 +226,7 @@ timeline.push(instructions2);
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
      "</div>" +
-     "<div> <p></p> </div>" +
+     "<div> </div>" +
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
@@ -257,7 +258,7 @@ var test = {
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices: ['f', 'j'],
     data: jsPsych.timelineVariable('data'),
-    trial_duration: 8000,
+    trial_duration: 16000,
     on_finish: function (data) {
         data.correct = data.key_press == jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
     },
