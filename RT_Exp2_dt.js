@@ -10,12 +10,11 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You succesfully finished the first experiment trial. </p>" +
-        "<p> You will now start the second block of the experiment.  </p> " +
-        "<p> The task will stay the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
-        "<p > Again, the task will be the same for all trials in this block.</p> " +
-        "<p> Please again try to answer at least 80% correct. </p>" +
-        "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
+    stimulus: "<p> Sie haben den ersten Experiment-Block erfolgreich beendet. </p>" +
+        "<p> Sie beginnen nun den zweiten Experiment-Block.</p> " +
+        "<p> Die Aufgabe bleibt gleich: Bitte wählen Sie das Wort aus, welches von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte.</p>" +
+        "<p> Bitte versuchen Sie weiterhin, mehr als 80% der Trials korrekt zu beantworten.</p>" +
+        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen. </p> "         
 };
 timeline.push(welcome_block);
 
@@ -23,12 +22,12 @@ timeline.push(welcome_block);
   var test_stimuli = [
         { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-         "<p class='big', style='color: red; '><strong>Tomato</strong></p>" +
+         "<p class='big', style='color: red; '><strong>Tomate</strong></p>" +
          "<div style=';' class='sev'>" +
             "<div style='color: red; '>" +
-            "<p class='small'>  <strong>Potato</strong>  </p>  </div>" +
+            "<p class='small'>  <strong>Tomade</strong>  </p>  </div>" +
             "<div class='float: right;'>" +
-            "<p class='small', style = 'color:blue'><strong>Tomato</strong></p></div>" +
+            "<p class='small', style = 'color:blue'><strong>Tomate</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
         "<br>" +
@@ -46,12 +45,12 @@ timeline.push(welcome_block);
   
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: blue; '><strong>Monkey</strong></p>" +
+      "<p class='big', style='color: blue; '><strong>Traube</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: orange; '>" +
-         "<p class='small'>  <strong>Donkey</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Traude</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:brown'><strong>Monkey</strong></p></div>" +
+         "<p class='small', style = 'color:brown'><strong>Traube</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -69,12 +68,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: orange; '><strong>Bridge</strong></p>" +
+      "<p class='big', style='color: orange; '><strong>Pfütze</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Fridge</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Pfüdse</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:orange'><strong>Bridge</strong></p></div>" +
+         "<p class='small', style = 'color:orange'><strong>Pfütze</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -92,12 +91,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: green; '><strong>Hand</strong></p>" +
+      "<p class='big', style='color: green; '><strong>Hund</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: pink; '>" +
-         "<p class='small'>  <strong>Band</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Mund</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:green'><strong>Hand</strong></p></div>" +
+         "<p class='small', style = 'color:green'><strong>Hund</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -115,12 +114,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: brown; '><strong>Bear</strong></p>" +
+      "<p class='big', style='color: brown; '><strong>Bach</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: brown; '>" +
-         "<p class='small'>  <strong>Bear</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Bach</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:red'><strong>Pear</strong></p></div>" +
+         "<p class='small', style = 'color:red'><strong>Dach</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -138,12 +137,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: pink; '><strong>Cat</strong></p>" +
+      "<p class='big', style='color: pink; '><strong>Katze</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: purple; '>" +
-         "<p class='small'>  <strong>Cat</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Katze</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Bat</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Katse</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -161,12 +160,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: purple; '><strong>Mouse</strong></p>" +
+      "<p class='big', style='color: purple; '><strong>Maus</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: blue; '>" +
-         "<p class='small'>  <strong>Mouse</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Maus</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:purple'><strong>House</strong></p></div>" +
+         "<p class='small', style = 'color:purple'><strong>Haus</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -184,12 +183,12 @@ timeline.push(welcome_block);
 
       { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Hole</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Hose</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: green; '>" +
-         "<p class='small'>  <strong>Hole</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Hose</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:pink'><strong>Mole</strong></p></div>" +
+         "<p class='small', style = 'color:pink'><strong>Hosa</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -270,8 +269,8 @@ var debrief_block = {
         var accuracy_Exp2 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy_Exp2 + "% of the trials.</p>" +
-            "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
+        return "<p>Sie haben " + accuracy_Exp2 + "% der Trials richtig beantwortet.</p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren!</p>";
 
     }
 };

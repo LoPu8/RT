@@ -10,33 +10,33 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You succesfully finished the second experiment trial. </p>" +
-        "<p> You will now start the third block of the experiment.  </p> " +
-        "<p style = 'margin-bottom: 50px'> The task for this trial is slightly different: Please choose the option, in which the object belongs to a <strong>different category</strong> than the other two words.</p>" +
+    stimulus: "<p> Sie haben erfolgreich den zweiten Experiment-Block beendet. </p>" +
+        "<p> Sie beginnen nun den dritten Block.  </p> " +
+        "<p style = 'margin-bottom: 50px'> Die Aufgabe für diesen Block ist leicht anders: Bitte wählen Sie das Objekt aus, was zu einer <strong>unterschiedlichen Kategorie</strong> gehört als das Wort in der Mitte.</p>" +
         "<div >" +
-        "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
+        "<p class='big', style='color: black; '><strong>Apfel</strong></p>" +
         "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Blau</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Banane</strong></p></div>" +
         "</div>" +
-        "<p style = 'margin-top: 50px'> In this example, the left word is from a different category (color) compared to the other two (fruits). Thus, <strong>you should press F on the keyboard.</strong> </p>" +
-      "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
+        "<p style = 'margin-top: 50px'> In diesem Beispiel gehört das linke Wort zu einer anderen Kategorie (Farben) als die Kategorie in der Mitte und rechts (Früchte). Daher <strong> drücken Sie bitte F auf der Tastatur.</strong>  </p>" +
+      "<p style = 'margin-top: 100px'>Drücken Sie die Taste F um zu beginnen.</p>" +
       "</div>"      
 };
 timeline.push(welcome_block);
 
 
   var test_stimuli = [
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was einer <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-         "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
+         "<p class='big', style='color: black; '><strong>Apfel</strong></p>" +
          "<div style=';' class='sev'>" +
             "<div style='color: black; '>" +
-            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+            "<p class='small'>  <strong>Blau</strong>  </p>  </div>" +
             "<div class='float: right;'>" +
-            "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+            "<p class='small', style = 'color:black'><strong>Banane</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
         "<br>" +
@@ -52,14 +52,14 @@ timeline.push(welcome_block);
     }
   },
   
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Chair</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Stuhl</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
          "<p class='small'>  <strong>Wind</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Table</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Tisch</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -75,14 +75,14 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Wind</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
          "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Rain</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Regen</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -98,14 +98,14 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Circle</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Kreis</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Table</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Tisch</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Triangle</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Dreieck</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -121,14 +121,14 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Spaghetti</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Bread</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Brot</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Circle</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Kreis</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -144,12 +144,12 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Green</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Grün</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Blau</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:black'><strong>Spaghetti</strong></p></div>" +
      "</div>" +
@@ -167,14 +167,14 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Car</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Auto</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
          "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Banane</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -190,14 +190,14 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlichen Kategorie</strong> angehört </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Monkey</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Affe</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Elephant</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Elefant</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Car</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Auto</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -278,8 +278,8 @@ var debrief_block = {
         var accuracy_Exp3 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy_Exp3 + "% of the trials.</p>" +
-            "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
+        return "<p>Sie haben " + accuracy_Exp3 + "% der Trials richtig beantwortet.</p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren!</p>";
 
     }
 };
