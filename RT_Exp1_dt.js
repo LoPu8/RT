@@ -13,7 +13,6 @@ var welcome_block = {
     stimulus: "<p> Sie haben die Übungs-Aufgaben erfolgreich durchlaufen. </p>" +
         "<p> Sie beginnen nun den ersten Experiment-Block.</p> " +
         "<p> Die Aufgabe bleibt gleich: Bitte wählen Sie das Wort aus, welches von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte.</p>" +
-        "<p > Die Aufgabe ist weiterhin dieselbe für alle kommenden Trials.</p> " +
         "<p> Bitte versuchen Sie weiterhin, mehr als 80% der Trials korrekt zu beantworten.</p>" +
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen. </p> "        
 };
