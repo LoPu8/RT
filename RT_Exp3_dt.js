@@ -29,7 +29,7 @@ timeline.push(welcome_block);
 
 
   var test_stimuli = [
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
          "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
          "<div style=';' class='sev'>" +
@@ -52,7 +52,7 @@ timeline.push(welcome_block);
     }
   },
   
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Chair</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -75,7 +75,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Wind</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -98,7 +98,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Circle</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -121,7 +121,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Spaghetti</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -144,7 +144,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Green</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -167,7 +167,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Car</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -190,7 +190,7 @@ timeline.push(welcome_block);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Monkey</strong></p>" +
       "<div style=';' class='sev'>" +

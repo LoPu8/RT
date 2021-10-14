@@ -47,7 +47,7 @@ timeline.push(instructions1);
 var instructions2 = {
     type: "html-keyboard-response",
     stimulus: "<p>Zunächst sehen Sie 16 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
-        "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil des Experiments zu gelangen</strong>, das heißt es ist wichtiger, korrekt zu antworten als sich zu beeilen.</p>" +
+        "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil des Experiments zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
         "<p> </p>" + 
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen.</p>",
     post_trial_gap: 2000
@@ -56,7 +56,7 @@ timeline.push(instructions2);
 
 
   var test_stimuli = [
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
          "<p class='big', style='color: black; '><strong>Rot</strong></p>" +
          "<div style=';' class='sev'>" +
@@ -79,7 +79,7 @@ timeline.push(instructions2);
     }
   },
   
-  { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+  { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: red; '><strong>Blau</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -102,7 +102,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: blue; '><strong>Orange</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -125,7 +125,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: orange; '><strong>Grün</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -148,7 +148,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: purple; '><strong>Braun</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -171,7 +171,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: brown; '><strong>Pink</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -194,7 +194,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: green; '><strong>Lila</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -217,7 +217,7 @@ timeline.push(instructions2);
     }
   },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
       "<div >" +
       "<p class='big', style='color: pink; '><strong>Schwarz</strong></p>" +
       "<div style=';' class='sev'>" +

@@ -20,7 +20,7 @@ timeline.push(welcome_block);
 
 
 var test_stimuli = [
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
        "<p class='big', style='color: black; '><strong>Red</strong></p>" +
        "<div style=';' class='sev'>" +
@@ -43,7 +43,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: red; '><strong>Blue</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -66,7 +66,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: blue; '><strong>Orange</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -89,7 +89,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: orange; '><strong>Green</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -112,7 +112,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: purple; '><strong>Brown</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -135,7 +135,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: brown; '><strong>Pink</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -158,7 +158,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: green; '><strong>Purple</strong></p>" +
     "<div style=';' class='sev'>" +
@@ -181,7 +181,7 @@ var test_stimuli = [
   }
 },
 
-    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
+    { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong> ist </p>" +
     "<div >" +
     "<p class='big', style='color: pink; '><strong>Black</strong></p>" +
     "<div style=';' class='sev'>" +
