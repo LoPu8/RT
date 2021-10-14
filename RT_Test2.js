@@ -20,28 +20,28 @@ timeline.push(welcome_block);
 
 /* define instructions trial */
 var instructions1 = {
-    type: "html-keyboard-response",
-    stimulus: "<p>In this experiment, you will see three words. " +
-        "One big word in the middle, and two smaller ones to the left and right.</p>" +
-        "<p> Your task is, to identify the word which is <strong>different</strong> to the one in the middle </p>"+ 
-        "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
-        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p> <p> </p> " +
-        "<div >" +
-          "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
-          "<div style=';' class='sev'>" +
-           "<div style='color: red; '>" +
-           "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-           "<div class='float: right;'>" +
-           "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
-          "</div>" +
-     "<p style = 'margin-top: 50px'> In this example, the left word is different to the big one in the middle. Thus, <strong>you should press F on the keyboard.</strong> </p>" +
-        "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
-        "</div>" 
-        ,
-    post_trial_gap: 500
+  type: "html-keyboard-response",
+  stimulus: "<p>In this experiment, you will see three words. " +
+      "One big word in the middle, and two smaller ones to the left and right.</p>" +
+      "<p> Your task always is, to identify the word (i.e. text) which is <strong>different</strong> to the one in the middle. </p>"+ 
+      "<p> If the <strong>left</strong> word (i.e. text) is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
+      "If the <strong>right</strong> word (i.e. text) is different to the one presented in the middle, press the letter  <strong>J</strong>.</p>" +
+      " <p style = 'margin-bottom: 50px'><strong> The task will be the same for all trials. </strong></p> " +
+      "<div >" +
+        "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
+        "<div style=';' class='sev'>" +
+         "<div style='color: red; '>" +
+         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='small', style = 'color:blue'><strong>Yellow</strong></p></div>" +
+        "</div>" +
+   "<p style = 'margin-top: 50px'> In this example, the left word is different to the big one in the middle. Thus, <strong>you should press F on the keyboard.</strong> </p>" +
+      "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
+      "</div>" 
+      ,
+  post_trial_gap: 500
 };
 timeline.push(instructions1);
-
 
 var instructions2 = {
     type: "html-keyboard-response",

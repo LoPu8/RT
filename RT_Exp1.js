@@ -11,8 +11,9 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> You succesfully finished the test trials. </p>" +
-        "<p> You will now start the first trial of the experiment.  </p> " +
-        "<p> The task will be the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
+        "<p> You will now start the first block of the experiment.  </p> " +
+        "<p> The task will stay the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
+        "<p > Again, the task will be the same for all trials in this block.</p> " +
         "<p> Please again try to answer at least 80% correct. </p>" +
         "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
 };
