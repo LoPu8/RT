@@ -12,7 +12,7 @@ var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> You succesfully finished the second experiment trial. </p>" +
         "<p> You will now start the third block of the experiment.  </p> " +
-        "<p style = 'margin-bottom: 100px'> The task for this trial is slightly different: Please choose the option, in which the object belongs to a <strong>different category</strong> than the other two words.</p>" +
+        "<p style = 'margin-bottom: 50px'> The task for this trial is slightly different: Please choose the option, in which the object belongs to a <strong>different category</strong> than the other two words.</p>" +
         "<div >" +
         "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
         "<div style=';' class='sev'>" +

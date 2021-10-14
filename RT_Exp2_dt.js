@@ -10,33 +10,25 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You succesfully finished the second experiment trial. </p>" +
-        "<p> You will now start the third block of the experiment.  </p> " +
-        "<p style = 'margin-bottom: 100px'> The task for this trial is slightly different: Please choose the option, in which the object belongs to a <strong>different category</strong> than the other two words.</p>" +
-        "<div >" +
-        "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
-        "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
-        "</div>" +
-        "<p style = 'margin-top: 50px'> In this example, the left word is from a different category (color) compared to the other two (fruits). Thus, <strong>you should press F on the keyboard.</strong> </p>" +
-      "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
-      "</div>"      
+    stimulus: "<p> You succesfully finished the first experiment trial. </p>" +
+        "<p> You will now start the second block of the experiment.  </p> " +
+        "<p> The task will stay the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
+        "<p > Again, the task will be the same for all trials in this block.</p> " +
+        "<p> Please again try to answer at least 80% correct. </p>" +
+        "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
 };
 timeline.push(welcome_block);
 
 
   var test_stimuli = [
-    { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+    { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-         "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
+         "<p class='big', style='color: red; '><strong>Tomato</strong></p>" +
          "<div style=';' class='sev'>" +
-            "<div style='color: black; '>" +
-            "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+            "<div style='color: red; '>" +
+            "<p class='small'>  <strong>Potato</strong>  </p>  </div>" +
             "<div class='float: right;'>" +
-            "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+            "<p class='small', style = 'color:blue'><strong>Tomato</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
         "<br>" +
@@ -52,14 +44,14 @@ timeline.push(welcome_block);
     }
   },
   
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Chair</strong></p>" +
+      "<p class='big', style='color: blue; '><strong>Monkey</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Wind</strong>  </p>  </div>" +
+         "<div style='color: orange; '>" +
+         "<p class='small'>  <strong>Donkey</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Table</strong></p></div>" +
+         "<p class='small', style = 'color:brown'><strong>Monkey</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -75,14 +67,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Wind</strong></p>" +
+      "<p class='big', style='color: orange; '><strong>Bridge</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Fridge</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Rain</strong></p></div>" +
+         "<p class='small', style = 'color:orange'><strong>Bridge</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -98,14 +90,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Circle</strong></p>" +
+      "<p class='big', style='color: green; '><strong>Hand</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Table</strong>  </p>  </div>" +
+         "<div style='color: pink; '>" +
+         "<p class='small'>  <strong>Band</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Triangle</strong></p></div>" +
+         "<p class='small', style = 'color:green'><strong>Hand</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -121,14 +113,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Spaghetti</strong></p>" +
+      "<p class='big', style='color: brown; '><strong>Bear</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Bread</strong>  </p>  </div>" +
+         "<div style='color: brown; '>" +
+         "<p class='small'>  <strong>Bear</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Circle</strong></p></div>" +
+         "<p class='small', style = 'color:red'><strong>Pear</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -144,14 +136,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Green</strong></p>" +
+      "<p class='big', style='color: pink; '><strong>Cat</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
+         "<div style='color: purple; '>" +
+         "<p class='small'>  <strong>Cat</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Spaghetti</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Bat</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -167,14 +159,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Car</strong></p>" +
+      "<p class='big', style='color: purple; '><strong>Mouse</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
+         "<div style='color: blue; '>" +
+         "<p class='small'>  <strong>Mouse</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+         "<p class='small', style = 'color:purple'><strong>House</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -190,14 +182,14 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the object is in a <strong>different category</strong> </p>" +
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: black; '><strong>Monkey</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Hole</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Elephant</strong>  </p>  </div>" +
+         "<div style='color: green; '>" +
+         "<p class='small'>  <strong>Hole</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Car</strong></p></div>" +
+         "<p class='small', style = 'color:pink'><strong>Mole</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
      "<br>" +
@@ -275,10 +267,10 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy_Exp3 = Math.round(correct_trials.count() / trials.count() * 100);
+        var accuracy_Exp2 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy_Exp3 + "% of the trials.</p>" +
+        return "<p>You responded correctly on " + accuracy_Exp2 + "% of the trials.</p>" +
             "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
