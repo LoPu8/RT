@@ -25,8 +25,8 @@ var instructions1 = {
         "One big word in the middle, and two smaller ones to the left and right.</p>" +
         "<p> Your task always is, to identify the word which is <strong>different</strong> to the one in the middle </p>"+ 
         "<p style = 'margin-bottom: 50px'> If the <strong>left</strong> word is different to the one presented in the middle, press the letter  <strong>F</strong> on the keyboard." +
-        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>.</p>" +
-        " <p> <strong> The task will be the same for all trials </strong></p> " +
+        "If the <strong>right</strong> word is different to the one presented in the middle, press the letter  <strong>J</strong>." +
+        " <strong> The task will be the same for all trials </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Yellow</strong></p>" +
           "<div style=';' class='sev'>" +
