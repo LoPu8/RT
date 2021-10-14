@@ -10,9 +10,9 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You succesfully finished the test trials. </p>" +
-        "<p> You will now start the first trial of the experiment.  </p> " +
-        "<p> The task will be the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
+    stimulus: "<p> You succesfully finished the first experiment trial. </p>" +
+        "<p> You will now start the second trial of the experiment.  </p> " +
+        "<p> The task will stay the same: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
         "<p> Please again try to answer at least 80% correct. </p>" +
         "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
 };
@@ -22,12 +22,12 @@ timeline.push(welcome_block);
   var test_stimuli = [
     { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-         "<p class='big', style='color: black; '><strong>Red</strong></p>" +
+         "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
          "<div style=';' class='sev'>" +
-            "<div style='color: red; '>" +
+            "<div style='color: black; '>" +
             "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
             "<div class='float: right;'>" +
-            "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+            "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
         "</div>" +
         "<div> <p></p> </div>" +
       "<div style=';' class='sev'>" +
@@ -44,100 +44,78 @@ timeline.push(welcome_block);
   
   { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: red; '><strong>Blue</strong></p>" +
-      "<div style=';' class='sev'>" +
-         "<div style='color: blue; '>" +
-         "<p class='small'>  <strong>Red</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:blue'><strong>Blue</strong></p></div>" +
-     "</div>" +
-     "<div> <p></p> </div>" +
-   "<div style=';' class='sev'>" +
-         "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
-   "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: blue; '><strong>Orange</strong></p>" +
-      "<div style=';' class='sev'>" +
-         "<div style='color: orange; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:green'><strong>Orange</strong></p></div>" +
-     "</div>" +
-     "<div> <p></p> </div>" +
-   "<div style=';' class='sev'>" +
-         "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
-   "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: orange; '><strong>Green</strong></p>" +
-      "<div style=';' class='sev'>" +
-         "<div style='color: green; '>" +
-         "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
-     "</div>" +
-     "<div> <p></p> </div>" +
-   "<div style=';' class='sev'>" +
-         "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
-   "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'f'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: purple; '><strong>Brown</strong></p>" +
-      "<div style=';' class='sev'>" +
-         "<div style='color: orange; '>" +
-         "<p class='small'>  <strong>Brown</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:orange'><strong>Blue</strong></p></div>" +
-     "</div>" +
-     "<div> <p></p> </div>" +
-   "<div style=';' class='sev'>" +
-         "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
-   "</div>",
-    data: {
-      test_part: 'test',
-      correct_response: 'j'
-    }
-  },
-
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
-      "<div >" +
-      "<p class='big', style='color: brown; '><strong>Pink</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Chair</strong></p>" +
       "<div style=';' class='sev'>" +
          "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Pink</strong>  </p>  </div>" +
+         "<p class='small'>  <strong>Wind</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:pink'><strong>Brown</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Table</strong></p></div>" +
+     "</div>" +
+     "<div> <p></p> </div>" +
+   "<div style=';' class='sev'>" +
+         "<div>" +
+         "<p class='little'>  Press f  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='little'> Press j </p></div>" +
+   "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: black; '><strong>Wind</strong></p>" +
+      "<div style=';' class='sev'>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='small', style = 'color:black'><strong>Rain</strong></p></div>" +
+     "</div>" +
+     "<div> <p></p> </div>" +
+   "<div style=';' class='sev'>" +
+         "<div>" +
+         "<p class='little'>  Press f  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='little'> Press j </p></div>" +
+   "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: black; '><strong>Circle</strong></p>" +
+      "<div style=';' class='sev'>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Table</strong>  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='small', style = 'color:black'><strong>Triangle</strong></p></div>" +
+     "</div>" +
+     "<div> <p></p> </div>" +
+   "<div style=';' class='sev'>" +
+         "<div>" +
+         "<p class='little'>  Press f  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='little'> Press j </p></div>" +
+   "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'f'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: black; '><strong>Spaghetti</strong></p>" +
+      "<div style=';' class='sev'>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Bread</strong>  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='small', style = 'color:black'><strong>Circle</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
    "<div style=';' class='sev'>" +
@@ -154,12 +132,12 @@ timeline.push(welcome_block);
 
   { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: green; '><strong>Purple</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Green</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: purple; '>" +
-         "<p class='small'>  <strong>Purple</strong>  </p>  </div>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Green</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Spaghetti</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
    "<div style=';' class='sev'>" +
@@ -176,12 +154,34 @@ timeline.push(welcome_block);
 
   { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
       "<div >" +
-      "<p class='big', style='color: pink; '><strong>Black</strong></p>" +
+      "<p class='big', style='color: black; '><strong>Car</strong></p>" +
       "<div style=';' class='sev'>" +
-         "<div style='color: blue; '>" +
-         "<p class='small'>  <strong>Black</strong>  </p>  </div>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Bus</strong>  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='small', style = 'color:blue'><strong>Red</strong></p></div>" +
+         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
+     "</div>" +
+     "<div> <p></p> </div>" +
+   "<div style=';' class='sev'>" +
+         "<div>" +
+         "<p class='little'>  Press f  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='little'> Press j </p></div>" +
+   "</div>",
+    data: {
+      test_part: 'test',
+      correct_response: 'j'
+    }
+  },
+
+  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      "<div >" +
+      "<p class='big', style='color: black; '><strong>Monkey</strong></p>" +
+      "<div style=';' class='sev'>" +
+         "<div style='color: black; '>" +
+         "<p class='small'>  <strong>Elephant</strong>  </p>  </div>" +
+         "<div class='float: right;'>" +
+         "<p class='small', style = 'color:black'><strong>Car</strong></p></div>" +
      "</div>" +
      "<div> <p></p> </div>" +
    "<div style=';' class='sev'>" +
@@ -241,7 +241,7 @@ var feedback = {
 var test_procedure = {
     timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
-    repetitions: 2,
+    repetitions: 4,
     randomize_order: true
 }
 timeline.push(test_procedure);
@@ -258,10 +258,10 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy_Exp1 = Math.round(correct_trials.count() / trials.count() * 100);
-        var rt = Math.round(correct_trials.select('rt').mean());
+        var accuracy_Exp3 = Math.round(correct_trials.count() / trials.count() * 100);
+        var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy_Exp1 + "% of the trials.</p>" +
+        return "<p>You responded correctly on " + accuracy_Exp3 + "% of the trials.</p>" +
             "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
