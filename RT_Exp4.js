@@ -10,20 +10,11 @@ var timeline = [];
 /* define welcome message trial */
 var welcome_block = {
     type: "html-keyboard-response",
-    stimulus: "<p> You succesfully finished the second experiment trial. </p>" +
-        "<p> You will now start the third trial of the experiment.  </p> " +
-        "<p> The task for this trial is slightly different to the previous trials: You now have to choose the option, in which the described object is in a <strong>different category</strong> than the others.</p>" +
-        "<div >" +
-        "<p class='big', style='color: black; '><strong>Apple</strong></p>" +
-        "<div style=';' class='sev'>" +
-         "<div style='color: black; '>" +
-         "<p class='small'>  <strong>Blue</strong>  </p>  </div>" +
-         "<div class='float: right;'>" +
-         "<p class='small', style = 'color:black'><strong>Banana</strong></p></div>" +
-        "</div>" +
-        "<p style = 'margin-top: 50px'> In this example, the left word is from a different category compared to the other two. Thus, <strong>you should press F on the keyboard.</strong> </p>" +
-      "<p style = 'margin-top: 100px'>Press F to begin.</p>" +
-      "</div>"      
+    stimulus: "<p> You succesfully finished the third experiment trial. </p>" +
+        "<p> You will now start the last trial of the experiment.  </p> " +
+        "<p> The task will again be the same as in the first and second trial: You have to choose the option, in which the word (i.e., text) is <strong>different</strong>.</p>" +
+        "<p> Please again try to answer at least 80% correct. </p>" +
+        "<p style = 'margin-top: 100px'> When you are ready, press any key to begin. </p> "        
 };
 timeline.push(welcome_block);
 
@@ -250,7 +241,7 @@ var feedback = {
 var test_procedure = {
     timeline: [fixation, test, feedback],
     timeline_variables: test_stimuli,
-    repetitions: 4,
+    repetitions: 2,
     randomize_order: true
 }
 timeline.push(test_procedure);
@@ -267,10 +258,10 @@ var debrief_block = {
         var correct_trials = trials.filter({
             correct: true
         });
-        var accuracy_Exp3 = Math.round(correct_trials.count() / trials.count() * 100);
+        var accuracy_Exp4 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>You responded correctly on " + accuracy_Exp3 + "% of the trials.</p>" +
+        return "<p>You responded correctly on " + accuracy_Exp4 + "% of the trials.</p>" +
             "<p style = 'margin-top: 100px'>Press any key to continue!</p>";
 
     }
