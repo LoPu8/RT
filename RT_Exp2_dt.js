@@ -21,7 +21,7 @@ timeline.push(welcome_block);
 
 
   var test_stimuli = [
-    { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+        { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
          "<p class='big', style='color: red; '><strong>Tomato</strong></p>" +
          "<div style=';' class='sev'>" +
@@ -34,9 +34,9 @@ timeline.push(welcome_block);
         "<br>" +
       "<div style=';' class='sev'>" +
             "<div>" +
-            "<p class='little'>  Press f  </p>  </div>" +
+            "<p class='little'>  Drücken Sie f  </p>  </div>" +
             "<div class='float: right;'>" +
-            "<p class='little'> Press j </p></div>" +
+            "<p class='little'> Drücken Sie j </p></div>" +
       "</div>",
     data: {
       test_part: 'test',
@@ -44,7 +44,7 @@ timeline.push(welcome_block);
     }
   },
   
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: blue; '><strong>Monkey</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -57,9 +57,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -67,7 +67,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: orange; '><strong>Bridge</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -80,9 +80,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -90,7 +90,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: green; '><strong>Hand</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -103,9 +103,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -113,7 +113,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: brown; '><strong>Bear</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -126,9 +126,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -136,7 +136,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: pink; '><strong>Cat</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -149,9 +149,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -159,7 +159,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: purple; '><strong>Mouse</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -172,9 +172,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -182,7 +182,7 @@ timeline.push(welcome_block);
     }
   },
 
-  { stimulus: "<p class = 'header'>Please choose the option in which the word (i.e., text) is <strong>different</strong> </p>" +
+      { stimulus: "<p class = 'header'>Wählen Sie das Wort aus, was <strong>unterschiedlich</strong></p>" +
       "<div >" +
       "<p class='big', style='color: black; '><strong>Hole</strong></p>" +
       "<div style=';' class='sev'>" +
@@ -195,9 +195,9 @@ timeline.push(welcome_block);
      "<br>" +
    "<div style=';' class='sev'>" +
          "<div>" +
-         "<p class='little'>  Press f  </p>  </div>" +
+         "<p class='little'>  Drücken Sie f  </p>  </div>" +
          "<div class='float: right;'>" +
-         "<p class='little'> Press j </p></div>" +
+         "<p class='little'> Drücken Sie j </p></div>" +
    "</div>",
     data: {
       test_part: 'test',
@@ -238,9 +238,9 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Correct!</p></div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>"; // the parameter value has to be returned from the function
       } else {
-        return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Incorrect!</p></div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>"; // the parameter value has to be returned from the function
       }
     },
     trial_duration: 1500
