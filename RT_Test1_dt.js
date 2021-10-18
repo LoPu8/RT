@@ -47,7 +47,7 @@ timeline.push(instructions1);
 
 var instructions2 = {
     type: "html-keyboard-response",
-    stimulus: "<p>Zunächst sehen Sie 16 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
+    stimulus: "<p>Zunächst sehen Sie 8 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
         "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil der Studie zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
         "<p> </p>" + 
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen.</p>",
@@ -274,7 +274,23 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>"; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>" +
+        "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
+        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
+        "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
+        " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Trials. </strong></p> " +
+        "<div >" +
+          "<p class='big', style='color: black; '><strong>Gelb</strong></p>" +
+          "<div style=';' class='sev'>" +
+           "<div style='color: red; '>" +
+           "<p class='small'>  <strong>Blau</strong>  </p>  </div>" +
+           "<div class='float: right;'>" +
+           "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
+          "</div>" +
+     "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte F auf der Tastatur.</strong> </p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie die Taste F um zu beginnen.</p>" +
+        "</div>"  
+        ; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>"; // the parameter value has to be returned from the function
       }
