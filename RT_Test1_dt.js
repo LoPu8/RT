@@ -274,14 +274,16 @@ var feedback = {
       // the stimulus value on each trial.
       var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
       if(last_trial_correct){
-        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>"  ; // the parameter value has to be returned from the function
+        return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>" +
+        "<br>"+
+        "<p> Drücken Sie irgendeine Taste, um fortzufahren. </p>"+ 
+         ; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>" +
         "<br>"+
         "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
         "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
         "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
-        " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Trials. </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Gelb</strong></p>" +
           "<div style=';' class='sev'>" +
@@ -291,7 +293,7 @@ var feedback = {
            "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
           "</div>" +
      "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte F auf der Tastatur.</strong> </p>" +
-        "<p style = 'margin-top: 100px'>Drücken Sie die Taste F um zu beginnen.</p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie die Taste F.</p>" +
         "</div>"  
         
         ; // the parameter value has to be returned from the function
