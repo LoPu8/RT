@@ -297,7 +297,7 @@ var feedback = {
         ; // the parameter value has to be returned from the function
       }
     },
-    trial_duration: 3000
+
   }
 
 
