@@ -47,7 +47,7 @@ timeline.push(instructions1);
 var instructions2 = {
   type: "html-keyboard-response",
   stimulus: "<p>Sie sehen nun wiederum 16 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
-      "<strong> Sie müssen weiterhin mindestens 80% richtig beantworten, um zum nächsten Teil des Experiments zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
+      "<strong> Sie müssen weiterhin mindestens 80% richtig beantworten, um zum nächsten Teil der Studie zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
       "<p> </p>" + 
       "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen.</p>",
   post_trial_gap: 2000
@@ -246,7 +246,7 @@ var fixation = {
   stimulus: '<div style="font-size:60px;">+</div>',
   choices: jsPsych.NO_KEYS,
   trial_duration: function () {
-      return jsPsych.randomization.sampleWithoutReplacement([750, 1000, 1250, 1500], 1)[0];
+      return jsPsych.randomization.sampleWithoutReplacement([400, 600, 800], 1)[0];
   },
   data: {
       test_part: 'fixation'
@@ -278,7 +278,7 @@ var feedback = {
       return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>"; // the parameter value has to be returned from the function
     }
   },
-  trial_duration: 2500
+  trial_duration: 3000
 }
 
 

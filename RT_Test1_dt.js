@@ -11,6 +11,7 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> Im ersten Teil der Studie werden Sie einige Wörter sehen. Ihre Aufgabe ist es, bestimmte Worte auszuwählen. </p>" +
+        "<p> Der erste Teil besteht aus ein bis zwei Übungsblöcken, gefolgt von vier Aufgabenblöcken.</p>" +
         "<p> Im zweiten Teil werden wir Ihnen ein paar Fragen stellen über Ihre Wahrnehmung von politischen Ereignissen. </p> " +
         "<p> </p>" +
         "<p> </p>" +
@@ -47,7 +48,7 @@ timeline.push(instructions1);
 var instructions2 = {
     type: "html-keyboard-response",
     stimulus: "<p>Zunächst sehen Sie 16 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
-        "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil des Experiments zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
+        "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil der Studie zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
         "<p> </p>" + 
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen.</p>",
     post_trial_gap: 2000
@@ -278,7 +279,7 @@ var feedback = {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>"; // the parameter value has to be returned from the function
       }
     },
-    trial_duration: 2500
+    trial_duration: 3000
   }
 
 
