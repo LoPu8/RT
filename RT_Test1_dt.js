@@ -276,7 +276,7 @@ var feedback = {
       if(last_trial_correct){
         return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>" +
         "<br>"+
-        "<p> Drücken Sie irgendeine Taste, um fortzufahren. </p>"+ 
+        "<p> Drücken Sie irgendeine Taste, um fortzufahren. </p>" 
          ; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>" +
