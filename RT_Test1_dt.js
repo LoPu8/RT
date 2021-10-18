@@ -285,6 +285,7 @@ var feedback = {
         "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
         "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
         "<br>" +
+        "<br>" +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Gelb</strong></p>" +
           "<div style=';' class='sev'>" +
