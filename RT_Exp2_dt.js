@@ -12,7 +12,7 @@ var welcome_block = {
     type: "html-keyboard-response",
     stimulus:
     "<p> Sie beginnen nun den zweiten von vier Aufgabenblöcken.</p> " +
-        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen. </p> "         
+        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen. </p> "         
 };
 timeline.push(welcome_block);
 
@@ -314,7 +314,7 @@ var debrief_block = {
         var rt_Test2 = Math.round(correct_trials.select('rt').mean());
 
         return "<p>Sie haben " + accuracy_Exp2 + "% der Trials richtig beantwortet.</p>" +
-        "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren!</p>";
+        "<p style = 'margin-top: 100px'>Drücken Sie eine beliebige Taste, um fortzufahren!</p>";
 
     }
 };

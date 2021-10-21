@@ -13,7 +13,7 @@ var welcome_block = {
     stimulus: "<p> Sie haben die Übungs-Aufgaben erfolgreich durchlaufen. </p>" +
         "<p> Sie beginnen nun den ersten von vier Aufgabenblöcken.</p> " +
         "<p> Die Aufgabe bleibt immer gleich: Bitte wählen Sie das Wort aus, welches von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte.</p>" +
-        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen. </p> "        
+        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen. </p> "        
 };
 timeline.push(welcome_block);
 
@@ -315,7 +315,7 @@ var debrief_block = {
       var rt = Math.round(correct_trials.select('rt').mean());
 
       return "<p>Sie haben " + accuracy_Exp1 + "% der Trials richtig beantwortet.</p>" +
-          "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren!</p>";
+          "<p style = 'margin-top: 100px'>Drücken Sie eine beliebige Taste, um fortzufahren!</p>";
 
   }
 };

@@ -25,8 +25,8 @@ var instructions1 = {
     stimulus: "<p>Auf den folgenden Seiten werden Sie jeweils drei Wörter sehen. " +
         "Ein großes Wort in der Mitte, und zwei kleinere links und rechts.</p>" +
         "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
-        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
-        "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
+        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+        "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
         " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Trials. </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Gelb</strong></p>" +
@@ -36,8 +36,8 @@ var instructions1 = {
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
           "</div>" +
-     "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte F auf der Tastatur.</strong> </p>" +
-        "<p style = 'margin-top: 100px'>Drücken Sie die Taste F um zu beginnen.</p>" +
+     "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte f auf der Tastatur.</strong> </p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie die Taste f um zu beginnen.</p>" +
         "</div>" 
         ,
     post_trial_gap: 500
@@ -282,8 +282,8 @@ var feedback = {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>" +
         "<br>"+
         "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
-        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
-        "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
+        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+        "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
         "<br>" +
         "<br>" +
         "<div >" +
@@ -294,7 +294,7 @@ var feedback = {
            "<div class='float: right;'>" +
            "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
           "</div>" +
-     "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte F auf der Tastatur.</strong> </p>" +
+     "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte f auf der Tastatur.</strong> </p>" +
         "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren.</p>" +
         "</div>"  
         

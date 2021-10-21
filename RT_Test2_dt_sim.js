@@ -281,8 +281,8 @@ var feedback = {
       return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>" +
       "<br>"+
       "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>gleich</strong> ist wie das Wort in der Mitte. </p>"+ 
-      "<p> Wenn das <strong>linke</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>F</strong> auf der Tastatur." +
-      "Wenn das <strong>rechte</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>J</strong>.</p>" +
+      "<p> Wenn das <strong>linke</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+      "Wenn das <strong>rechte</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
       "<br>" +
       "<br>" +
       "<div >" +
@@ -293,7 +293,7 @@ var feedback = {
          "<div class='float: right;'>" +
          "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
         "</div>" +
-   "<p style = 'margin-top: 50px'> In diesem Beispiel ist das rechte Wort gleich wie das Wort in der Mitte. Daher <strong> drücken Sie bitte J auf der Tastatur.</strong> </p>" +
+   "<p style = 'margin-top: 50px'> In diesem Beispiel ist das rechte Wort gleich wie das Wort in der Mitte. Daher <strong> drücken Sie bitte j auf der Tastatur.</strong> </p>" +
       "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren.</p>" +
       "</div>"  
       
