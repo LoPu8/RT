@@ -312,7 +312,7 @@ var debrief_block = {
       var accuracy_Exp4 = Math.round(correct_trials.count() / trials.count() * 100);
       var rt = Math.round(correct_trials.select('rt').mean());
 
-      return "<p>Sie haben " + accuracy_Exp4 + "% der Trials richtig beantwortet.</p>" +
+      return "<p>Sie haben " + accuracy_Exp4 + "% der Aufgaben richtig beantwortet.</p>" +
           "<p style = 'margin-top: 100px'>Drücken Sie eine beliebige Taste, um fortzufahren!</p>";
 
   }

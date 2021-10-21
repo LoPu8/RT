@@ -15,7 +15,7 @@ var welcome_block = {
         "<p> Im zweiten Teil werden wir Ihnen ein paar Fragen stellen über Ihre Wahrnehmung von politischen Ereignissen. </p> " +
         "<p> </p>" +
         "<p> </p>" +
-        "<p style = 'margin-top: 100px'> Klicken Sie irgendeine Taste, um fortzufahren. </p> "        
+        "<p style = 'margin-top: 100px'> Drücken Sie eine beliebige Taste, um fortzufahren. </p> "        
 };
 timeline.push(welcome_block);
 
@@ -27,7 +27,7 @@ var instructions1 = {
         "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
         "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
         "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
-        " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Trials. </strong></p> " +
+        " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Durchgänge. </strong></p> " +
         "<div >" +
           "<p class='big', style='color: black; '><strong>Gelb</strong></p>" +
           "<div style=';' class='sev'>" +
@@ -37,7 +37,7 @@ var instructions1 = {
            "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
           "</div>" +
      "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte f auf der Tastatur.</strong> </p>" +
-        "<p style = 'margin-top: 100px'>Drücken Sie die Taste f um zu beginnen.</p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie die Taste f, um zu beginnen.</p>" +
         "</div>" 
         ,
     post_trial_gap: 500
@@ -47,10 +47,10 @@ timeline.push(instructions1);
 
 var instructions2 = {
     type: "html-keyboard-response",
-    stimulus: "<p>Zunächst sehen Sie 8 Trials (Aufgaben) zum Üben. Nach jedem Trial kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
+    stimulus: "<p>Zunächst sehen Sie 8 Aufgaben zum Üben. Nach jeder Aufgabe kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
         "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil der Studie zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
         "<p> </p>" + 
-        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie irgendeine Taste, um zu beginnen.</p>",
+        "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen.</p>",
     post_trial_gap: 2000
 };
 timeline.push(instructions2);
@@ -276,7 +276,7 @@ var feedback = {
       if(last_trial_correct){
         return "<div class = centerbox><div style='color:green'; class = center-text> <p style= 'font-size: 2em'>Richtig!</p></div></div>" +
         "<br>"+
-        "<p> Drücken Sie irgendeine Taste, um fortzufahren. </p>" 
+        "<p> Drücken Sie eine beliebige Taste, um fortzufahren. </p>" 
          ; // the parameter value has to be returned from the function
       } else {
         return "<div class = centerbox><div style='color:red'; class = center-text> <p style= 'font-size: 2em'>Falsch!</p></div></div>" +
@@ -295,7 +295,7 @@ var feedback = {
            "<p class='small', style = 'color:blue'><strong>Gelb</strong></p></div>" +
           "</div>" +
      "<p style = 'margin-top: 50px'> In diesem Beispiel ist das linke Wort unterschiedlich im Vergleich zu dem in der Mitte. Daher <strong> drücken Sie bitte f auf der Tastatur.</strong> </p>" +
-        "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren.</p>" +
+        "<p style = 'margin-top: 100px'>Drücken Sie eine beliebige Taste, um fortzufahren.</p>" +
         "</div>"  
         
         ; // the parameter value has to be returned from the function
@@ -327,8 +327,8 @@ var debrief_block = {
         var accuracy_Test1 = Math.round(correct_trials.count() / trials.count() * 100);
         var rt = Math.round(correct_trials.select('rt').mean());
 
-        return "<p>Sie haben " + accuracy_Test1 + "% der Trials richtig beantwortet.</p>" +
-            "<p style = 'margin-top: 100px'>Drücken Sie irgendeine Taste, um fortzufahren!</p>";
+        return "<p>Sie haben " + accuracy_Test1 + "% der Aufgaben richtig beantwortet.</p>" +
+            "<p style = 'margin-top: 100px'>Drücken Sie eine beliebige Taste, um fortzufahren!</p>";
 
     }
 };
