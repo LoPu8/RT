@@ -11,7 +11,7 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> Im ersten Teil der Studie werden Sie einige Wörter sehen. Ihre Aufgabe ist es, bestimmte Worte auszuwählen. </p>" +
-        "<p> Der erste Teil besteht aus ein bis zwei Übungsblöcken, gefolgt von vier Aufgabenblöcken.</p>" +
+        "<p> Der erste Teil besteht aus ein bis zwei Übungsblöcken, gefolgt von einem Aufgabenblock.</p>" +
         "<p> Im zweiten Teil werden wir Ihnen ein paar Fragen stellen über Ihre Wahrnehmung von politischen Ereignissen. </p> " +
         "<p> </p>" +
         "<p> </p>" +

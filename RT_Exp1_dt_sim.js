@@ -11,7 +11,7 @@ var timeline = [];
 var welcome_block = {
     type: "html-keyboard-response",
     stimulus: "<p> Sie haben die Übungs-Aufgaben erfolgreich durchlaufen. </p>" +
-        "<p> Sie beginnen nun den ersten von vier Aufgabenblöcken.</p> " +
+        "<p> Sie beginnen nun die eigentlichen Aufgaben.</p> " +
         "<p> Die Aufgabe bleibt immer gleich: Bitte wählen Sie das Wort aus, welches von den Buchstaben her <strong>gleich</strong> ist wie das Wort in der Mitte.</p>" +
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen. </p> "        
 };
