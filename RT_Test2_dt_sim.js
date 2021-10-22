@@ -49,6 +49,8 @@ var instructions2 = {
   stimulus: "<p>Sie sehen nun wiederum 8 Aufgaben zum Üben. Nach jeder Aufgabe kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
       "<strong> Sie sollten weiterhin mindestens 80% richtig beantworten </strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
       "<p> </p>" + 
+      "<p> Zur Wiederholung: Wenn das <strong>linke</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+      "Wenn das <strong>rechte</strong> Wort (vom Text her) gleich ist wie das Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
       "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen.</p>",
   post_trial_gap: 2000
 };
