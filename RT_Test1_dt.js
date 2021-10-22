@@ -25,7 +25,7 @@ var instructions1 = {
     stimulus: "<p>Auf den folgenden Seiten werden Sie jeweils drei Wörter sehen. " +
         "Ein großes Wort in der Mitte, und zwei kleinere links und rechts.</p>" +
         "<p> Ihre Aufgabe ist, das Wort auszuwählen was von den Buchstaben her <strong>unterschiedlich</strong> ist im Vergleich zu dem Wort in der Mitte. </p>"+ 
-        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+        "<p> Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur. " +
         "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
         " <p style = 'margin-bottom: 50px'><strong> Die Aufgabe ist dieselbe für alle kommenden Durchgänge. </strong></p> " +
         "<div >" +
@@ -50,7 +50,7 @@ var instructions2 = {
     stimulus: "<p>Zunächst sehen Sie 8 Aufgaben zum Üben. Nach jeder Aufgabe kriegen Sie eine Rückmeldung, ob die Antwort richtig ist oder nicht." +
         "<strong> Sie müssen mindestens 80% richtig beantworten, um zum nächsten Teil der Studie zu gelangen</strong>, das heißt, es ist wichtiger, korrekt zu antworten, als sich zu beeilen.</p>" +
         "<p> </p>" + 
-        "<p> Zur Wiederholung: Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur." +
+        "<p> Zur Wiederholung: Wenn das <strong>linke</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>f</strong> auf der Tastatur. " +
         "Wenn das <strong>rechte</strong> Wort (vom Text her) unterschiedlich ist im Vergleich zu dem Wort in der Mitte, drücken Sie bitte den Buchstaben <strong>j</strong>.</p>" +
         "<p style = 'margin-top: 100px'> Wenn Sie bereit sind, drücken Sie eine beliebige Taste, um zu beginnen.</p>",
     post_trial_gap: 2000
